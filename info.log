@@ -1,0 +1,9 @@
+ERROR 2014-03-04 11:49:55,058 base 19391 4536053760 Internal Server Error: /gcmhttp/registeruser
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/django/core/handlers/base.py", line 114, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Library/Python/2.7/site-packages/django/views/decorators/csrf.py", line 57, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/dflabsceo/Web/django-push-master/gcmhttp/views.py", line 11, in registeruser
+    return HttpResponse(json.dumps({"status":"success"}))
+NameError: global name 'json' is not defined
